@@ -8,4 +8,9 @@ from .models import Employee, Picture, Activity
 
 class EmployeeAdmin(admin.ModelAdmin):
     list_display = ['name']
-    p
+    pass
+
+
+class ActivityAdmin(admin.ModelAdmin):
+
+    list_display = ['Employee', 'date', 'arrival_time', 'depart_time', 'on_working
