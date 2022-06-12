@@ -15,4 +15,11 @@ class ActivityAdmin(admin.ModelAdmin):
 
     list_display = ['Employee', 'date', 'arrival_time', 'depart_time', 'on_working',
                     'off_working', 'fun_area_time', 'active', 'exception', 'comment']
-    list_filter = ('active', 
+    list_filter = ('active', 'exception', 'on_working')
+    search_fields = ['Employee__name']
+
+    pass
+
+
+class PictureAdmin(admin.ModelAdmin):
+    list_d
