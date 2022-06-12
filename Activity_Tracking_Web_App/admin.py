@@ -22,4 +22,9 @@ class ActivityAdmin(admin.ModelAdmin):
 
 
 class PictureAdmin(admin.ModelAdmin):
-    list_d
+    list_display = ['employee', 'pic']
+    pass
+
+
+admin.site.register(Activity, ActivityAdmin)
+admin.site.register(Employee, 
