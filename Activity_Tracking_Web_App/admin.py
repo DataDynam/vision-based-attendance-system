@@ -13,4 +13,6 @@ class EmployeeAdmin(admin.ModelAdmin):
 
 class ActivityAdmin(admin.ModelAdmin):
 
-    list_display = ['Employee', 'date', 'arrival_time', 'depart_time', 'on_working
+    list_display = ['Employee', 'date', 'arrival_time', 'depart_time', 'on_working',
+                    'off_working', 'fun_area_time', 'active', 'exception', 'comment']
+    list_filter = ('active', 
