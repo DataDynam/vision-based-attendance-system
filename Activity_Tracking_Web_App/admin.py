@@ -27,4 +27,5 @@ class PictureAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Activity, ActivityAdmin)
-admin.site.register(Employee, 
+admin.site.register(Employee, EmployeeAdmin)
+admin.site.register(Picture, PictureAdmin)
