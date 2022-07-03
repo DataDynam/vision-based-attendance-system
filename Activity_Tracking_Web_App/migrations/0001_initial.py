@@ -18,4 +18,10 @@ class Migration(migrations.Migration):
             name='Employee',
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length
+                ('name', models.CharField(max_length=200)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Test',
+            fields=[
+      
