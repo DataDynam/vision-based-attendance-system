@@ -31,4 +31,5 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Picture',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_na
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('pic', models.ImageField(blank=True, null=True, upload_to=Activity_Tracking_Web_App.models.content_fi
