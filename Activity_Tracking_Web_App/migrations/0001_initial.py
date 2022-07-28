@@ -42,4 +42,5 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('date', models.DateField(default=datetime.datetime.now)),
                 ('arrival_time', models.CharField(blank=True, max_length=10000, null=True)),
-    
+                ('depart_time', models.CharField(blank=True, max_length=10000, null=True)),
+       
