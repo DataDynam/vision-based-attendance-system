@@ -43,4 +43,5 @@ class Migration(migrations.Migration):
                 ('date', models.DateField(default=datetime.datetime.now)),
                 ('arrival_time', models.CharField(blank=True, max_length=10000, null=True)),
                 ('depart_time', models.CharField(blank=True, max_length=10000, null=True)),
-       
+                ('on_working', models.DecimalField(blank=True, decimal_places=2, max_digits=5, null=True)),
+                ('o
