@@ -44,4 +44,5 @@ class Migration(migrations.Migration):
                 ('arrival_time', models.CharField(blank=True, max_length=10000, null=True)),
                 ('depart_time', models.CharField(blank=True, max_length=10000, null=True)),
                 ('on_working', models.DecimalField(blank=True, decimal_places=2, max_digits=5, null=True)),
-                ('o
+                ('off_working', models.DecimalField(blank=True, decimal_places=2, max_digits=5, null=True)),
+                ('fun_area_tim
