@@ -50,4 +50,6 @@ class Migration(migrations.Migration):
                 ('exception', models.BooleanField(default=False)),
                 ('comment', models.CharField(blank=True, max_length=10000, null=True)),
                 ('Employee', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='Activity_Tracking_Web_App.Employee')),
-          
+            ],
+        ),
+    ]
