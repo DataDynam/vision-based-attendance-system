@@ -48,4 +48,5 @@ class Migration(migrations.Migration):
                 ('fun_area_time', models.DecimalField(blank=True, decimal_places=2, max_digits=5, null=True)),
                 ('active', models.BooleanField(default=True)),
                 ('exception', models.BooleanField(default=False)),
-                ('c
+                ('comment', models.CharField(blank=True, max_length=10000, null=True)),
+                ('Employee', models
