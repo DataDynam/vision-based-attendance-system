@@ -14,4 +14,6 @@ class Employee(models.Model):
 
 
 class Activity(models.Model):
-    Employee = m
+    Employee = models.ForeignKey(Employee, on_delete=models.DO_NOTHING)
+    date = models.DateField(default=datetime.now)
+    arrival_time = models.Ch
