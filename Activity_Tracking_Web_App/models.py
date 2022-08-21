@@ -20,3 +20,6 @@ class Activity(models.Model):
     depart_time = models.CharField(max_length=10000, blank=True, null=True)
     on_working = models.DecimalField(
         max_digits=5, decimal_places=2, blank=True, null=True)
+    off_working = models.DecimalField(
+        max_digits=5, decimal_places=2, blank=True, null=True)
+    fun_area_ti
