@@ -26,4 +26,10 @@ class Activity(models.Model):
         max_digits=5, decimal_places=2, blank=True, null=True)
     active = models.BooleanField(default=True)
     exception = models.BooleanField(default=False)
-    comment = models.CharField(max_leng
+    comment = models.CharField(max_length=10000, blank=True, null=True)
+
+    def Employee_name(self):
+        return Employee.name
+
+
+def content_file_name(instance
