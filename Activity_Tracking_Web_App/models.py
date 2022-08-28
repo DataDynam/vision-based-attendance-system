@@ -24,4 +24,6 @@ class Activity(models.Model):
         max_digits=5, decimal_places=2, blank=True, null=True)
     fun_area_time = models.DecimalField(
         max_digits=5, decimal_places=2, blank=True, null=True)
-    active = 
+    active = models.BooleanField(default=True)
+    exception = models.BooleanField(default=False)
+    comment = models.CharField(max_leng
