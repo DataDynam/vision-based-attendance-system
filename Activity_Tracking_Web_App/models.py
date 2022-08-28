@@ -32,4 +32,6 @@ class Activity(models.Model):
         return Employee.name
 
 
-def content_file_name(instance
+def content_file_name(instance, filename):
+    filename, ext = filename.split('.')
+    file_path = 'photos/' + '{name}/user_{user_id}.{filename}.
