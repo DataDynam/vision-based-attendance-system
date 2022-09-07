@@ -48,4 +48,9 @@ class Picture(models.Model):
 
 def test_content_file_name(instance, filename):
     filename, ext = filename.split('.')
-    fi
+    file_path = 'testing/' + '{filename}.{ext}'.format( filename=filename, ext=ext)
+    return file_path
+
+ 
+
+class Test(models.
