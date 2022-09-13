@@ -1,1 +1,3 @@
-employee_name,arrival_time,depart_time,on_working,off_workin
+employee_name,arrival_time,depart_time,on_working,off_working,fun_area_time
+Employee6,56.22033898,453.1666667,383.9463278,12.99999997,0
+Employee4,52.3559322,131.3666667,79.0107345,75.870
