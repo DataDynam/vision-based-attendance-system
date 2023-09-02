@@ -1,1 +1,3 @@
-camera_id,timestamp,employe
+camera_id,timestamp,employee_name,confidence,x,y,width,height
+4,78.36666667,Employee1,0.999999872,622,282,35,42
+4,78.96666667,Empl
