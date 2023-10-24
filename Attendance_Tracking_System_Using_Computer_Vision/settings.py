@@ -1,0 +1,2 @@
+"""
+Django settings for Attendance_Tracking_System_Using_Computer_Visi
