@@ -37,4 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Activity_Tracking_Web_App.apps.ActivityTrackingWebAppCo
+    'Activity_Tracking_Web_App.apps.ActivityTrackingWebAppConfig'
+]
+
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.
