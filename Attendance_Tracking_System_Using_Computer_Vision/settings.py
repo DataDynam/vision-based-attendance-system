@@ -35,4 +35,6 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
-    'django.contrib.m
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'Activity_Tracking_Web_App.apps.ActivityTrackingWebAppCo
