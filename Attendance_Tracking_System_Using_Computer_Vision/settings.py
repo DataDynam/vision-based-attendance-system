@@ -50,4 +50,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCON
+ROOT_URLCONF = 'Attendance_Tracking_System_Using_Computer_Vision.urls'
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.tem
