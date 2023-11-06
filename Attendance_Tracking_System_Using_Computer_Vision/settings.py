@@ -54,4 +54,8 @@ ROOT_URLCONF = 'Attendance_Tracking_System_Using_Computer_Vision.urls'
 
 TEMPLATES = [
     {
-        'BACKEND': 'django.tem
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context
