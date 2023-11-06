@@ -58,4 +58,6 @@ TEMPLATES = [
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
-            'context
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.
