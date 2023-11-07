@@ -68,4 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Attendance_Tr
+WSGI_APPLICATION = 'Attendance_Tracking_System_Using_Computer_Vision.wsgi.application'
+
+
+# Database
+# https://docs.djangoproject.com/en/2.2/ref/
