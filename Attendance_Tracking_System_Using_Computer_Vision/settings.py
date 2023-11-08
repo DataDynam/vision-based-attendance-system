@@ -72,4 +72,9 @@ WSGI_APPLICATION = 'Attendance_Tracking_System_Using_Computer_Vision.wsgi.applic
 
 
 # Database
-# https://docs.djangoproject.com/en/2.2/ref/
+# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.pat
