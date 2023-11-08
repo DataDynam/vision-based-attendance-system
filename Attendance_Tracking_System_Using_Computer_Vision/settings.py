@@ -77,4 +77,12 @@ WSGI_APPLICATION = 'Attendance_Tracking_System_Using_Computer_Vision.wsgi.applic
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.pat
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+
+# Password validation
+# https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
+
+AUTH_PASSWORD_V
