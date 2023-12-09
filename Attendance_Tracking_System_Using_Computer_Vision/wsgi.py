@@ -11,4 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Attendance_Tracking_System_Using_Computer_
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Attendance_Tracking_System_Using_Computer_Vision.settings')
+
+application = get_wsgi_application()
