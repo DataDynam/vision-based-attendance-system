@@ -8,4 +8,8 @@ from .Get_Embeddings import get_embedding
 from .SVM_Classifier import svm_train
 
 def add_person():
-  ''
+  '''
+  Gets Images Embeddings of new person and concatenate them with the old Embeddings
+  '''
+
+  # load train 
