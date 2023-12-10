@@ -12,4 +12,6 @@ def add_person():
   Gets Images Embeddings of new person and concatenate them with the old Embeddings
   '''
 
-  # load train 
+  # load train dataset --> Returns NewTrainx & NewTrainY
+  #print("Data is at:",PATH_TO_ADDED_PERSON_FOLDER)
+  trainX_new_person, t
