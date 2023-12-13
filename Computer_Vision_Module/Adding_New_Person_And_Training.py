@@ -20,4 +20,7 @@ def add_person():
   # CONVERT EACH FACE IN THE TRAIN SET TO AN EMBEDDING
   newTrainX_Images = list()
   for face_pixels in trainX_new_person:
-    embedding = get_embeddi
+    embedding = get_embedding(model, face_pixels)
+    newTrainX_Images.append(embedding)
+  newTrainX_Images = asarray(newTrainX_Images)
+  print("SHAP
