@@ -15,4 +15,6 @@ def add_person():
   # load train dataset --> Returns NewTrainx & NewTrainY
   #print("Data is at:",PATH_TO_ADDED_PERSON_FOLDER)
   trainX_new_person, trainy_new_person ,_ = load_dataset(PATH_TO_ADDED_PERSON_FOLDER + '/')
-  #print("SHAPE OF ADDED TRAINING E
+  #print("SHAPE OF ADDED TRAINING EXAMPLES:",trainX.shape,"SHAPE OF LABELS:" ,trainy_new_person.shape)
+  
+  # CONVERT EACH FACE IN THE TRAIN SET TO A
