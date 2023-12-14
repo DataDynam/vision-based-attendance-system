@@ -23,4 +23,7 @@ def add_person():
     embedding = get_embedding(model, face_pixels)
     newTrainX_Images.append(embedding)
   newTrainX_Images = asarray(newTrainX_Images)
-  print("SHAP
+  print("SHAPE OF ADDED EMBEDDINGS:",newTrainX_Images.shape,"SHAPE OF LABELS:" ,trainy_new_person.shape)
+
+
+  data = load( EMBEDDINGS_PATH + '/Embed
