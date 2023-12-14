@@ -26,4 +26,6 @@ def add_person():
   print("SHAPE OF ADDED EMBEDDINGS:",newTrainX_Images.shape,"SHAPE OF LABELS:" ,trainy_new_person.shape)
 
 
-  data = load( EMBEDDINGS_PATH + '/Embed
+  data = load( EMBEDDINGS_PATH + '/Embeddings-dataset.npz' )
+  old_embeddings , old_labels = data['arr_0'] , data['arr_1']
+  print("OLD EMBEDDINGS:", old_embeddings.s
