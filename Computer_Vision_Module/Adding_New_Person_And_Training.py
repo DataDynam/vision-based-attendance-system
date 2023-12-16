@@ -31,4 +31,6 @@ def add_person():
   print("OLD EMBEDDINGS:", old_embeddings.shape ,"OLD LABELS:" ,old_labels.shape)
   new_embeddings , new_labels = newTrainX_Images,trainy_new_person
   print("NEW EMBEDDINGS:", new_embeddings.shape ,"NEW LABELS:" ,new_labels.shape)
-  trainX  = np.concatenate((old_embeddings, new_embeddings), axi
+  trainX  = np.concatenate((old_embeddings, new_embeddings), axis=0)
+  trainy_all_persons  = np.concatenate((old_labels, new_labels), axis=0)
+  print("FINAL EMBEDDINGS:", trai
