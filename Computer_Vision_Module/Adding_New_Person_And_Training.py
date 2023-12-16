@@ -33,4 +33,5 @@ def add_person():
   print("NEW EMBEDDINGS:", new_embeddings.shape ,"NEW LABELS:" ,new_labels.shape)
   trainX  = np.concatenate((old_embeddings, new_embeddings), axis=0)
   trainy_all_persons  = np.concatenate((old_labels, new_labels), axis=0)
-  print("FINAL EMBEDDINGS:", trai
+  print("FINAL EMBEDDINGS:", trainX.shape ,"FINAL LABELS:" ,trainy_all_persons.shape)
+  savez_compressed( EMBEDDINGS_PATH + '/Embeddings-da
