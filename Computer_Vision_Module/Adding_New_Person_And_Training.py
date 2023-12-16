@@ -34,4 +34,6 @@ def add_person():
   trainX  = np.concatenate((old_embeddings, new_embeddings), axis=0)
   trainy_all_persons  = np.concatenate((old_labels, new_labels), axis=0)
   print("FINAL EMBEDDINGS:", trainX.shape ,"FINAL LABELS:" ,trainy_all_persons.shape)
-  savez_compressed( EMBEDDINGS_PATH + '/Embeddings-da
+  savez_compressed( EMBEDDINGS_PATH + '/Embeddings-dataset.npz' , trainX,trainy_all_persons) 
+  svm_train(trainX, trainy_all_persons)
+  return
