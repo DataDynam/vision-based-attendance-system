@@ -11,4 +11,6 @@ def extract_face(filename, required_size=(160, 160)):
   THIS FUNCTION TAKES (ONE) IMAGE AS INPUT
   DETECT AND RETURN (ONE) FACE ARRAY RESIZED --> Using the MTCNN Detector
   '''
-  image = Image.open(fil
+  image = Image.open(filename) # load image from file
+  image = image.convert('RGB') # convert to RGB, if needed
+  pixels = asarray(image) # conv
