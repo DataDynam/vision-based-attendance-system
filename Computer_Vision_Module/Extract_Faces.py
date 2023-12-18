@@ -13,4 +13,8 @@ def extract_face(filename, required_size=(160, 160)):
   '''
   image = Image.open(filename) # load image from file
   image = image.convert('RGB') # convert to RGB, if needed
-  pixels = asarray(image) # conv
+  pixels = asarray(image) # convert to array
+  results = detector.detect_faces(pixels) # detect faces in the image
+  if(len(results) == 0):
+    return []
+  x1,
