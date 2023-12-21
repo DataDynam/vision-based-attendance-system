@@ -17,4 +17,6 @@ def extract_face(filename, required_size=(160, 160)):
   results = detector.detect_faces(pixels) # detect faces in the image
   if(len(results) == 0):
     return []
-  x1,
+  x1, y1, width, height = results[0]['box'] # extract the bounding box from the first face
+  x1, y1 = abs(x1), abs(y1)
+  x2, y2 = x1 
