@@ -19,4 +19,7 @@ def extract_face(filename, required_size=(160, 160)):
     return []
   x1, y1, width, height = results[0]['box'] # extract the bounding box from the first face
   x1, y1 = abs(x1), abs(y1)
-  x2, y2 = x1 
+  x2, y2 = x1 + width, y1 + height
+  face = pixels[y1:y2, x1:x2] # extract the face
+  image = Image.fromarray(face)
+  image = imag
