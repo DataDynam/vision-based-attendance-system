@@ -22,4 +22,6 @@ def extract_face(filename, required_size=(160, 160)):
   x2, y2 = x1 + width, y1 + height
   face = pixels[y1:y2, x1:x2] # extract the face
   image = Image.fromarray(face)
-  image = imag
+  image = image.resize(required_size) # resize pixels to the model size
+  face_array = asarray(image)
+  return face_array
