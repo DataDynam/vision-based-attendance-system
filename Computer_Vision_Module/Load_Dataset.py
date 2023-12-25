@@ -15,4 +15,7 @@ from os import listdir
 
 
 
-# load a dataset that contains one subdir for each class that in turn con
+# load a dataset that contains one subdir for each class that in turn contains images
+def load_dataset(directory):
+  '''
+  THIS FUNCTION TAKE DATABASE DIRECTORY WITH PERSONS' NAMES AS SUB
