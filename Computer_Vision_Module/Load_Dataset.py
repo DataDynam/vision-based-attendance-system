@@ -23,4 +23,4 @@ def load_dataset(directory):
   '''
   flag = None
   X, y = list(), list()
-  # savez_compressed( EMBED
+  # savez_compressed( EMBEDDINGS_PATH + '/Embeddings-dataset.npz', newTrainX,trainy)  # save arrays to one file in compressed format WILL BE USED WHEN
