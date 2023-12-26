@@ -23,4 +23,5 @@ def load_dataset(directory):
   '''
   flag = None
   X, y = list(), list()
-  # savez_compressed( EMBEDDINGS_PATH + '/Embeddings-dataset.npz', newTrainX,trainy)  # save arrays to one file in compressed format WILL BE USED WHEN
+  # savez_compressed( EMBEDDINGS_PATH + '/Embeddings-dataset.npz', newTrainX,trainy)  # save arrays to one file in compressed format WILL BE USED WHEN WE ADD NEW PERSON TO THE DATABASE WE'LL LOAD THIS AND APPEND
+  # data = load( EMBEDDINGS_PATH + '/Embeddings-dataset.np
