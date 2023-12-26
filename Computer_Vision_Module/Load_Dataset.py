@@ -28,4 +28,8 @@ def load_dataset(directory):
   # trainy = data['arr_1']
   
   if os.path.isfile( EMPLOYEES_NAMES +'/Employees-dataset.npz') == True:
-    data = load(
+    data = load( EMPLOYEES_NAMES + '/Employees-dataset.npz')
+    Employees = data['arr_0'] # List
+    # Already exist
+    flag = False
+  else:
