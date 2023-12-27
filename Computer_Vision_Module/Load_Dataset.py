@@ -41,4 +41,7 @@ def load_dataset(directory):
   
   for subdir in listdir(directory): # LOOP OVER SUB-FOLDERS, on per class
     if subdir in Employees:
-      print("SKIPPING EM
+      print("SKIPPING EMPLOYEE" , subdir)
+      continue
+    Employees = np.append(Employees , subdir)
+    path = directory + subdir + '/' # PATH = SUB
