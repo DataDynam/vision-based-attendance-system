@@ -33,3 +33,10 @@ def load_dataset(directory):
     # Already exist
     flag = False
   else:
+    Employees = np.array([])
+    flag = True
+  
+  print("CURRENT EMPLOYEE DATABASE:" ,Employees )
+    
+  
+  for subdir
