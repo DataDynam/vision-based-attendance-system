@@ -39,4 +39,6 @@ def load_dataset(directory):
   print("CURRENT EMPLOYEE DATABASE:" ,Employees )
     
   
-  for subdir
+  for subdir in listdir(directory): # LOOP OVER SUB-FOLDERS, on per class
+    if subdir in Employees:
+      print("SKIPPING EM
