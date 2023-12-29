@@ -44,4 +44,6 @@ def load_dataset(directory):
       print("SKIPPING EMPLOYEE" , subdir)
       continue
     Employees = np.append(Employees , subdir)
-    path = directory + subdir + '/' # PATH = SUB
+    path = directory + subdir + '/' # PATH = SUBFOLDER
+    if not isdir(path): # skip any files that might be in the dir
+      print("WARNING: FILES EXIST IN THE DATA DIRECTORY (ONLY 
