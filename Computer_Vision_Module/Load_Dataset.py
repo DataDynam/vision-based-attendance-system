@@ -50,4 +50,5 @@ def load_dataset(directory):
       print("SKIPPING FILE" , path , "...")
       continue
     
-    faces = load_faces(path) # load all faces in th
+    faces = load_faces(path) # load all faces in the subdirectory
+    labels = [subdir for _ in range(len(faces))] # create labels FOR THE PERSON, WE DO RANGE BECAUSE DETECT
