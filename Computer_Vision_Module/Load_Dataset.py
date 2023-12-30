@@ -51,4 +51,5 @@ def load_dataset(directory):
       continue
     
     faces = load_faces(path) # load all faces in the subdirectory
-    labels = [subdir for _ in range(len(faces))] # create labels FOR THE PERSON, WE DO RANGE BECAUSE DETECT
+    labels = [subdir for _ in range(len(faces))] # create labels FOR THE PERSON, WE DO RANGE BECAUSE DETECTOR CAN MISS SOME IMAGES AND DETECT 0 FACES
+    print('   >LOADED %d EXAMPLES FOR CLASS: %s' % (len(faces), subdir)) # s
