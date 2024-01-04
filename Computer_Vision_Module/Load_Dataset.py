@@ -55,4 +55,4 @@ def load_dataset(directory):
     print('   >LOADED %d EXAMPLES FOR CLASS: %s' % (len(faces), subdir)) # summarize progress
     X.extend(faces)  # store
     y.extend(labels) # store
-    savez_compressed( EMPLOYEES_NAMES +
+    savez_compressed( EMPLOYEES_NAMES + '/Employees-dataset.npz', Employees )  # save arrays to one file in compressed format WILL BE USED WHEN WE ADD NEW PERSON TO THE DATABASE 
