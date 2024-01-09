@@ -16,4 +16,8 @@ import keras
 
 
 def trainModel():
-  # lo
+  # load train dataset
+  print("STARTING THE TRAINING PROCESS...")
+  print("DATA PATH IS:",TRAINING_IMAGES_PATH)
+  
+  if no
