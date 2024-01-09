@@ -20,4 +20,6 @@ def trainModel():
   print("STARTING THE TRAINING PROCESS...")
   print("DATA PATH IS:",TRAINING_IMAGES_PATH)
   
-  if no
+  if not isdir(TRAINING_IMAGES_PATH):
+    print("ERROR: GIVEN PATH IS NOT A DIRECTORY, PATH IS:", TRAINING_IMAGES_PATH)
+    print("TERMI
