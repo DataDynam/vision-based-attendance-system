@@ -7,4 +7,13 @@ import os
 from os import listdir
 from os.path import isdir
 import numpy as np
-from num
+from numpy import asarray
+from numpy import savez_compressed
+from numpy import load
+import keras
+
+
+
+
+def trainModel():
+  # lo
