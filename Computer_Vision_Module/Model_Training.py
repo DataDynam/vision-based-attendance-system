@@ -22,4 +22,7 @@ def trainModel():
   
   if not isdir(TRAINING_IMAGES_PATH):
     print("ERROR: GIVEN PATH IS NOT A DIRECTORY, PATH IS:", TRAINING_IMAGES_PATH)
-    print("TERMI
+    print("TERMINATING...")
+    sys.exit(0)
+  trainX, trainy , flag = load_dataset(TRAINING_IMAGES_PATH + '/')
+  print("SHAPE OF TRAININ
