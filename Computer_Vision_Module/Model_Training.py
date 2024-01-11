@@ -31,4 +31,6 @@ def trainModel():
   newTrainX = list()
   for face_pixels in trainX:
     embedding = get_embedding(model, face_pixels)
-    newTrain
+    newTrainX.append(embedding)
+  newTrainX = asarray(newTrainX)
+  print("SHAPE OF TRAINING EMBEDDINGS:",newTrainX.shape,"SHAPE OF LABELS
