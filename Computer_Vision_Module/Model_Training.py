@@ -25,4 +25,6 @@ def trainModel():
     print("TERMINATING...")
     sys.exit(0)
   trainX, trainy , flag = load_dataset(TRAINING_IMAGES_PATH + '/')
-  print("SHAPE OF TRAININ
+  print("SHAPE OF TRAINING EXAMPLES:",trainX.shape,"SHAPE OF LABELS:" ,trainy.shape)
+  
+  # CONVERT EACH FACE IN THE TRAIN SET TO 
