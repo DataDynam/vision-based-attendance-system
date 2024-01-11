@@ -27,4 +27,8 @@ def trainModel():
   trainX, trainy , flag = load_dataset(TRAINING_IMAGES_PATH + '/')
   print("SHAPE OF TRAINING EXAMPLES:",trainX.shape,"SHAPE OF LABELS:" ,trainy.shape)
   
-  # CONVERT EACH FACE IN THE TRAIN SET TO 
+  # CONVERT EACH FACE IN THE TRAIN SET TO AN EMBEDDING
+  newTrainX = list()
+  for face_pixels in trainX:
+    embedding = get_embedding(model, face_pixels)
+    newTrain
