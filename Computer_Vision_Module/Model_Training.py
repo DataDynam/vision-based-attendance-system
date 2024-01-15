@@ -38,4 +38,8 @@ def trainModel():
   print("SAVING THE EMBEDDINGS NUMBY ARRAY...")
   if flag == True:
     # Data base is empty, save new numpy array and keep newTrainX
-    savez_compressed( EMBEDDINGS_PATH + '/Embeddings-dataset.npz', newTrainX,trainy)  # save arrays to one file in compressed format WILL BE USED WHEN WE ADD NEW PERSON TO THE DATABASE WE'L
+    savez_compressed( EMBEDDINGS_PATH + '/Embeddings-dataset.npz', newTrainX,trainy)  # save arrays to one file in compressed format WILL BE USED WHEN WE ADD NEW PERSON TO THE DATABASE WE'LL LOAD THIS AND APPEND
+    print("STARTING TRAINING THE SVM MODEL...")
+    svm_train(newTrainX, trainy)
+  elif flag == False:
+    d
