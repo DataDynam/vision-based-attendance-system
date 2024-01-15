@@ -42,4 +42,5 @@ def trainModel():
     print("STARTING TRAINING THE SVM MODEL...")
     svm_train(newTrainX, trainy)
   elif flag == False:
-    d
+    data = load( EMBEDDINGS_PATH + '/Embeddings-dataset.npz' )
+    old_embeddings , old_labels = data['arr_0'] , 
