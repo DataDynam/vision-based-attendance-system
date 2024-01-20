@@ -50,4 +50,6 @@ def trainModel():
     trainX  = np.concatenate((old_embeddings, new_embeddings), axis=0)
     trainy  = np.concatenate((old_labels, new_labels), axis=0)
     print("FINAL EMBEDDINGS:", trainX.shape ,"FINAL LABELS:" ,trainy.shape)
-    savez_compressed( EMB
+    savez_compressed( EMBEDDINGS_PATH + '/Embeddings-dataset.npz' , trainX,trainy) 
+    svm_train(trainX, trainy)
+  
