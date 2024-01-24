@@ -18,4 +18,9 @@ from mtcnn.mtcnn import MTCNN
 detector = MTCNN() # Creating instance from the class MTCNN
 
 def multiple_faces(filename, required_size=(160, 160)):
-  data = load( EMBEDDINGS_PATH + '/Embeddings-dataset.np
+  data = load( EMBEDDINGS_PATH + '/Embeddings-dataset.npz')
+  trainy = data['arr_1']
+  out_encoder = LabelEncoder()
+  out_encoder.fit(trainy)
+  trainy = out_encoder.transform(trainy)
+ 
