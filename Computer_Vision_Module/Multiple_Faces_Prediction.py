@@ -15,4 +15,7 @@ import mtcnn
 from mtcnn.mtcnn import MTCNN
 
 
-detector = MTCNN() # Creating instance from
+detector = MTCNN() # Creating instance from the class MTCNN
+
+def multiple_faces(filename, required_size=(160, 160)):
+  data = load( EMBEDDINGS_PATH + '/Embeddings-dataset.np
