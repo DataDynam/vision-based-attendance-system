@@ -9,4 +9,10 @@ from numpy import load
 from numpy import expand_dims
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import 
+from sklearn.preprocessing import Normalizer
+from PIL import Image
+import mtcnn
+from mtcnn.mtcnn import MTCNN
+
+
+detector = MTCNN() # Creating instance from
