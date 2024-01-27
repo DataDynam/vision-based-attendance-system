@@ -27,4 +27,7 @@ def multiple_faces(filename, required_size=(160, 160)):
   # LOAD THE MODEL
   print("TESTING ON AN IMAGE")
   print("LOADING THE MODEL...")
-  svm_model = pickle.load(open(SVM_
+  svm_model = pickle.load(open(SVM_MODEL_PATH +  '/svm_model.sav', 'rb'))
+  print("DONE LOADING THE MODEL!")
+  print("LOADING THE IMAGE...")
+  image = Image.open(fi
