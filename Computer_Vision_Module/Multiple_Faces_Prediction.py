@@ -23,4 +23,8 @@ def multiple_faces(filename, required_size=(160, 160)):
   out_encoder = LabelEncoder()
   out_encoder.fit(trainy)
   trainy = out_encoder.transform(trainy)
- 
+  
+  # LOAD THE MODEL
+  print("TESTING ON AN IMAGE")
+  print("LOADING THE MODEL...")
+  svm_model = pickle.load(open(SVM_
