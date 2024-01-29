@@ -30,4 +30,6 @@ def multiple_faces(filename, required_size=(160, 160)):
   svm_model = pickle.load(open(SVM_MODEL_PATH +  '/svm_model.sav', 'rb'))
   print("DONE LOADING THE MODEL!")
   print("LOADING THE IMAGE...")
-  image = Image.open(fi
+  image = Image.open(filename) # load image from file
+  print("DONE LOADING THE IMAGE!")
+  image = image.convert('RGB') # convert to
