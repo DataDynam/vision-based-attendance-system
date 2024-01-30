@@ -32,4 +32,6 @@ def multiple_faces(filename, required_size=(160, 160)):
   print("LOADING THE IMAGE...")
   image = Image.open(filename) # load image from file
   print("DONE LOADING THE IMAGE!")
-  image = image.convert('RGB') # convert to
+  image = image.convert('RGB') # convert to RGB, if needed
+  pixels = asarray(image) # convert to array
+  results = detector.detect_faces(pixels) # detect fac
