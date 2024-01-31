@@ -41,4 +41,7 @@ def multiple_faces(filename, required_size=(160, 160)):
   
   
   # LOOP OVER ALL FOUND FACE AND ANNOTATE THEM
-  for i in r
+  for i in range(len(results)):
+    
+    x1, y1, width, height = results[i]['box'] # extract the bounding box from the i-th first face
+    x1, y1 = abs(x1), 
