@@ -34,4 +34,11 @@ def multiple_faces(filename, required_size=(160, 160)):
   print("DONE LOADING THE IMAGE!")
   image = image.convert('RGB') # convert to RGB, if needed
   pixels = asarray(image) # convert to array
-  results = detector.detect_faces(pixels) # detect fac
+  results = detector.detect_faces(pixels) # detect faces in the image
+  
+  if(len(results) == 0):
+    return False
+  
+  
+  # LOOP OVER ALL FOUND FACE AND ANNOTATE THEM
+  for i in r
