@@ -44,4 +44,7 @@ def multiple_faces(filename, required_size=(160, 160)):
   for i in range(len(results)):
     
     x1, y1, width, height = results[i]['box'] # extract the bounding box from the i-th first face
-    x1, y1 = abs(x1), 
+    x1, y1 = abs(x1), abs(y1)
+    x2, y2 = x1 + width, y1 + height
+    face = pixels[y1:y2, x1:x2] # extract the face
+    image = Image.froma
