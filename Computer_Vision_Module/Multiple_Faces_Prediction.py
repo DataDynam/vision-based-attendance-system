@@ -47,4 +47,7 @@ def multiple_faces(filename, required_size=(160, 160)):
     x1, y1 = abs(x1), abs(y1)
     x2, y2 = x1 + width, y1 + height
     face = pixels[y1:y2, x1:x2] # extract the face
-    image = Image.froma
+    image = Image.fromarray(face)
+    image = image.resize(required_size) # resize pixels to the model size
+    face_array = asarray(image)
+    face_e
