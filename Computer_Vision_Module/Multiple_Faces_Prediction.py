@@ -50,4 +50,6 @@ def multiple_faces(filename, required_size=(160, 160)):
     image = Image.fromarray(face)
     image = image.resize(required_size) # resize pixels to the model size
     face_array = asarray(image)
-    face_e
+    face_emb = get_embedding(model, face_array) # get the embeddings
+    samples = expand_dims(face_emb, axis=0)
+    prediction = svm_mo
