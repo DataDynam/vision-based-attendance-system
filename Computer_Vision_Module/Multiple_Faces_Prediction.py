@@ -52,4 +52,6 @@ def multiple_faces(filename, required_size=(160, 160)):
     face_array = asarray(image)
     face_emb = get_embedding(model, face_array) # get the embeddings
     samples = expand_dims(face_emb, axis=0)
-    prediction = svm_mo
+    prediction = svm_model.predict(samples)
+    predict_name = out_encoder.inverse_transform(prediction)
+    pred_proba = svm_model.predic
