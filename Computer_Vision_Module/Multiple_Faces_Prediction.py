@@ -54,4 +54,7 @@ def multiple_faces(filename, required_size=(160, 160)):
     samples = expand_dims(face_emb, axis=0)
     prediction = svm_model.predict(samples)
     predict_name = out_encoder.inverse_transform(prediction)
-    pred_proba = svm_model.predic
+    pred_proba = svm_model.predict_proba(samples)
+    
+    # predict_name = out_encoder.inverse_transform(prediction)
+    # print("Prediction is",predict_name ,prediction,
