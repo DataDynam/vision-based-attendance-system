@@ -65,4 +65,7 @@ def multiple_faces(filename, required_size=(160, 160)):
       print("Prediction is",predict_name)
     else:
       predict_name = ['UNKNOWN']
-      print("Prediction is",predict_n
+      print("Prediction is",predict_name)
+
+    font = cv2.FONT_HERSHEY_TRIPLEX
+    cv2.putText(pixels, predict_name[0], (x1, y1), font, 0
