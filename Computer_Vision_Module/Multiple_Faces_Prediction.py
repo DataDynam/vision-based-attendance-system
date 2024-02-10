@@ -57,4 +57,7 @@ def multiple_faces(filename, required_size=(160, 160)):
     pred_proba = svm_model.predict_proba(samples)
     
     # predict_name = out_encoder.inverse_transform(prediction)
-    # print("Prediction is",predict_name ,prediction,
+    # print("Prediction is",predict_name ,prediction,pred_proba )
+    
+    print(pred_proba[0][prediction[0]])
+    if(pred_proba[0][prediction[0]] >= SVM_CONFIDENCE): # SVM 
