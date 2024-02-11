@@ -72,4 +72,5 @@ def multiple_faces(filename, required_size=(160, 160)):
   
   print("SAVING OUTPUT IMAGE...")
   cv2.imwrite( filename , pixels) 
-  print("IMAGE SAV
+  print("IMAGE SAVED TO:" , 'D:\\Work\\Attendance\\media\\testing\\IMG_1607.JPG' )
+  return filename
