@@ -10,4 +10,7 @@ from .Variables import SVM_MODEL_PATH
 def svm_train(newTrainX, trainy ):  
   in_encoder = Normalizer(norm='l2')
   newTrainX = in_encoder.transform(newTrainX)
-  out_encoder = Labe
+  out_encoder = LabelEncoder() # label encode targets
+  out_encoder.fit(trainy)
+  trainy = out_encoder.transform(trainy)
+  svm
