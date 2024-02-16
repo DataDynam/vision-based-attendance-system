@@ -15,4 +15,7 @@ def svm_train(newTrainX, trainy ):
   trainy = out_encoder.transform(trainy)
   svm_model = SVC(kernel='linear', probability=True)
   svm_model.fit(newTrainX, trainy)
-  print("SUCCESSFULLY FINISHE
+  print("SUCCESSFULLY FINISHED TRAINING THE SVM MODEL SUCCES!")
+  yhat_train = svm_model.predict(newTrainX)
+  score_train = accuracy_score(trainy, yhat_train) # score
+  print
