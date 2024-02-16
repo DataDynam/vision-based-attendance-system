@@ -18,4 +18,6 @@ def svm_train(newTrainX, trainy ):
   print("SUCCESSFULLY FINISHED TRAINING THE SVM MODEL SUCCES!")
   yhat_train = svm_model.predict(newTrainX)
   score_train = accuracy_score(trainy, yhat_train) # score
-  print
+  print('ACCURACY: TRAIN=%.3f' % (score_train*100))
+  # SAVING THE MODEL
+  print("SAVING SVM MODEL TO:", SVM_MODEL_PATH +  '/
