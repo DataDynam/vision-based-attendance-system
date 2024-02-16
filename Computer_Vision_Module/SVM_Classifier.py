@@ -13,4 +13,6 @@ def svm_train(newTrainX, trainy ):
   out_encoder = LabelEncoder() # label encode targets
   out_encoder.fit(trainy)
   trainy = out_encoder.transform(trainy)
-  svm
+  svm_model = SVC(kernel='linear', probability=True)
+  svm_model.fit(newTrainX, trainy)
+  print("SUCCESSFULLY FINISHE
