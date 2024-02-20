@@ -20,4 +20,7 @@ def svm_train(newTrainX, trainy ):
   score_train = accuracy_score(trainy, yhat_train) # score
   print('ACCURACY: TRAIN=%.3f' % (score_train*100))
   # SAVING THE MODEL
-  print("SAVING SVM MODEL TO:", SVM_MODEL_PATH +  '/
+  print("SAVING SVM MODEL TO:", SVM_MODEL_PATH +  '/svm_model.sav ...')
+  filename = SVM_MODEL_PATH +  '/svm_model.sav'
+  pickle.dump(svm_model, open(filename, 'wb'))
+  print("DONE SAVI
