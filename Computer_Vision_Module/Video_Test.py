@@ -10,4 +10,5 @@ from pandas import DataFrame
 from numpy import asarray
 from numpy import savez_compressed
 from numpy import expand_dims
-from numpy im
+from numpy import load
+from .Variables import EMBEDDINGS_PATH,detector,model,SVM_MODEL_PATH,PATH_TO_OUTPUT_VIDEOS_DIRECTORY,PATH_T
