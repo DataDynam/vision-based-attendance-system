@@ -23,4 +23,5 @@ def svm_train(newTrainX, trainy ):
   print("SAVING SVM MODEL TO:", SVM_MODEL_PATH +  '/svm_model.sav ...')
   filename = SVM_MODEL_PATH +  '/svm_model.sav'
   pickle.dump(svm_model, open(filename, 'wb'))
-  print("DONE SAVI
+  print("DONE SAVING THE MODEL!")
+  return
