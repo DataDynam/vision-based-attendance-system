@@ -11,4 +11,5 @@ from numpy import asarray
 from numpy import savez_compressed
 from numpy import expand_dims
 from numpy import load
-from .Variables import EMBEDDINGS_PATH,detector,model,SVM_MODEL_PATH,PATH_TO_OUTPUT_VIDEOS_DIRECTORY,PATH_T
+from .Variables import EMBEDDINGS_PATH,detector,model,SVM_MODEL_PATH,PATH_TO_OUTPUT_VIDEOS_DIRECTORY,PATH_TO_OUTPUT_LOGFILE_DIRECTORY,PATH_TO_VIDEO_DIRECTORY,DETECTOR_CONFIDENCE,SVM_CONFIDENCE
+from sklearn.preprocessing i
