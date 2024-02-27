@@ -17,4 +17,6 @@ from .Get_Embeddings import get_embedding
 
 
 def video_test(video_path, svm_model):
-  name = video_
+  name = video_path[video_path.find("CAMERA"):]
+  CAMERA_ID = int(re.search(r'\d+', name).group())
+  data = load(EMBEDDINGS_PATH + '/Embe
