@@ -23,4 +23,10 @@ def video_test(video_path, svm_model):
   trainy = data['arr_1']
   out_encoder = LabelEncoder()
   out_encoder.fit(trainy)
-  trainy = out
+  trainy = out_encoder.transform(trainy)
+  
+  
+  entries = {'camera_id': [],
+          'timestamp': [],
+          'employee_name':[],
+          '
