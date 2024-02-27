@@ -19,4 +19,8 @@ from .Get_Embeddings import get_embedding
 def video_test(video_path, svm_model):
   name = video_path[video_path.find("CAMERA"):]
   CAMERA_ID = int(re.search(r'\d+', name).group())
-  data = load(EMBEDDINGS_PATH + '/Embe
+  data = load(EMBEDDINGS_PATH + '/Embeddings-dataset.npz')
+  trainy = data['arr_1']
+  out_encoder = LabelEncoder()
+  out_encoder.fit(trainy)
+  trainy = out
