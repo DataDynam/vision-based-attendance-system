@@ -29,4 +29,10 @@ def video_test(video_path, svm_model):
   entries = {'camera_id': [],
           'timestamp': [],
           'employee_name':[],
-          '
+          'confidence':[],
+          'x':[],
+          'y':[],
+          'width':[],
+          'height':[]
+          }
+  df = DataFrame(en
