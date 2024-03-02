@@ -35,4 +35,8 @@ def video_test(video_path, svm_model):
           'width':[],
           'height':[]
           }
-  df = DataFrame(en
+  df = DataFrame(entries)
+  vidcap = cv2.VideoCapture(video_path)
+  fps = int(vidcap.get(5))
+  success = True
+  fourcc = cv2.VideoWri
