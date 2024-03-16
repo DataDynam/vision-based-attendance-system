@@ -39,4 +39,5 @@ def video_test(video_path, svm_model):
   vidcap = cv2.VideoCapture(video_path)
   fps = int(vidcap.get(5))
   success = True
-  fourcc = cv2.VideoWri
+  fourcc = cv2.VideoWriter_fourcc(*'mp4v') # Be sure to use lower case
+  out = cv2.VideoWriter(PATH_TO_OUTPUT_VIDEOS_DIRECT
