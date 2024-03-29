@@ -49,4 +49,7 @@ def video_test(video_path, svm_model):
     bar.update(counter+1)
     counter = counter + 1
     success, pixels = vidcap.read()  
-    if(success == False): # DIVIDING
+    if(success == False): # DIVIDING FPS/6 counter%3 != 0 or 
+      continue
+    results = detector.detect_faces(pixels)
+    for i i
