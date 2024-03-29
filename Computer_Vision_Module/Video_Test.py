@@ -42,4 +42,8 @@ def video_test(video_path, svm_model):
   fourcc = cv2.VideoWriter_fourcc(*'mp4v') # Be sure to use lower case
   out = cv2.VideoWriter(PATH_TO_OUTPUT_VIDEOS_DIRECTORY + '/CAMERA' + str(CAMERA_ID) +'.mp4', fourcc, fps, (int(vidcap.get(3)), int(vidcap.get(4))))
   success, pixels = vidcap.read()
-  bar = progressbar.ProgressBar(maxval=int(vidcap.get(cv2.CAP_PROP_FRAME_COUNT)),     widgets=[progressbar.Ba
+  bar = progressbar.ProgressBar(maxval=int(vidcap.get(cv2.CAP_PROP_FRAME_COUNT)),     widgets=[progressbar.Bar('#', '[', ']'), ' ', progressbar.Percentage()])
+  counter = 0
+  while success: 
+    current_frame_time = counter/fps
+   
