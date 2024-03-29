@@ -46,4 +46,7 @@ def video_test(video_path, svm_model):
   counter = 0
   while success: 
     current_frame_time = counter/fps
-   
+    bar.update(counter+1)
+    counter = counter + 1
+    success, pixels = vidcap.read()  
+    if(success == False): # DIVIDING
