@@ -57,4 +57,7 @@ def video_test(video_path, svm_model):
         continue
       x1, y1, width, height = results[i]['box'] # extract the bounding box from the first face
       x1, y1 = abs(x1), abs(y1)
-      x2, y2 = x1 + width, y1 + heigh
+      x2, y2 = x1 + width, y1 + height
+      face = pixels[y1:y2, x1:x2] # extract the face
+      image = Image.fromarray(face)
+      image = image.resize((160, 160)) #
