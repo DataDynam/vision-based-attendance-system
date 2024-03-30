@@ -55,4 +55,6 @@ def video_test(video_path, svm_model):
     for i in range(len(results)):
       if(results[i]['confidence'] < DETECTOR_CONFIDENCE):
         continue
-      x1, y1, width,
+      x1, y1, width, height = results[i]['box'] # extract the bounding box from the first face
+      x1, y1 = abs(x1), abs(y1)
+      x2, y2 = x1 + width, y1 + heigh
