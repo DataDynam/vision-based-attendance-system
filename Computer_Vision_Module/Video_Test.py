@@ -52,4 +52,7 @@ def video_test(video_path, svm_model):
     if(success == False): # DIVIDING FPS/6 counter%3 != 0 or 
       continue
     results = detector.detect_faces(pixels)
-    for i i
+    for i in range(len(results)):
+      if(results[i]['confidence'] < DETECTOR_CONFIDENCE):
+        continue
+      x1, y1, width,
