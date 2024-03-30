@@ -60,4 +60,6 @@ def video_test(video_path, svm_model):
       x2, y2 = x1 + width, y1 + height
       face = pixels[y1:y2, x1:x2] # extract the face
       image = Image.fromarray(face)
-      image = image.resize((160, 160)) #
+      image = image.resize((160, 160)) # resize pixels to the model size
+      face_array = asarray(image)
+      face_emb = get_embedding(model, face_array)
