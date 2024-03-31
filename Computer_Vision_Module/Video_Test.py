@@ -63,3 +63,7 @@ def video_test(video_path, svm_model):
       image = image.resize((160, 160)) # resize pixels to the model size
       face_array = asarray(image)
       face_emb = get_embedding(model, face_array)
+
+      samples = expand_dims(face_emb, axis=0)
+      prediction = svm_model.predict(samples)
+      pred_proba = svm_model.predict_proba(sam
