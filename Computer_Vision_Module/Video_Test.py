@@ -66,4 +66,7 @@ def video_test(video_path, svm_model):
 
       samples = expand_dims(face_emb, axis=0)
       prediction = svm_model.predict(samples)
-      pred_proba = svm_model.predict_proba(sam
+      pred_proba = svm_model.predict_proba(samples)
+
+      if(pred_proba[0][prediction[0]] > SVM_CONFIDENCE):
+        predict_name = out_encoder.inverse_transform(predi
