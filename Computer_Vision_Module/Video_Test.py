@@ -69,4 +69,6 @@ def video_test(video_path, svm_model):
       pred_proba = svm_model.predict_proba(samples)
 
       if(pred_proba[0][prediction[0]] > SVM_CONFIDENCE):
-        predict_name = out_encoder.inverse_transform(predi
+        predict_name = out_encoder.inverse_transform(prediction)
+        font = cv2.FONT_HERSHEY_SIMPLEX
+        cv2.putText(pixels, predict_name[0], (x1, y1), font, 1, (255, 255
