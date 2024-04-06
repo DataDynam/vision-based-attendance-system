@@ -73,4 +73,7 @@ def video_test(video_path, svm_model):
         font = cv2.FONT_HERSHEY_SIMPLEX
         cv2.putText(pixels, predict_name[0], (x1, y1), font, 1, (255, 255, 0), 2) 
 
-        ######################## WRITING TO CSV FILES ###############################
+        ######################## WRITING TO CSV FILES ################################
+        entry = {'camera_id': [str(CAMERA_ID)],
+          'timestamp': [current_frame_time],
+          'employe
