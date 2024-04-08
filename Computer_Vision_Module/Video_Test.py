@@ -76,4 +76,8 @@ def video_test(video_path, svm_model):
         ######################## WRITING TO CSV FILES ################################
         entry = {'camera_id': [str(CAMERA_ID)],
           'timestamp': [current_frame_time],
-          'employe
+          'employee_name':[predict_name[0]],
+          'confidence':[pred_proba[0][prediction[0]]],
+          'x':[int(x1)],
+          'y':[int(y1)],
+          'widt
