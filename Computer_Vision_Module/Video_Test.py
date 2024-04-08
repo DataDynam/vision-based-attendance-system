@@ -85,3 +85,7 @@ def video_test(video_path, svm_model):
           }
         temp = DataFrame(entry)
         df = df.append(temp)
+
+    out.write(pixels)
+    if cv2.waitKey(10) == 27:                     # exit if Escape is hit
+        brea
