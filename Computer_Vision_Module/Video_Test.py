@@ -88,4 +88,9 @@ def video_test(video_path, svm_model):
 
     out.write(pixels)
     if cv2.waitKey(10) == 27:                     # exit if Escape is hit
-        brea
+        break
+
+  #update_progress(1)
+  bar.finish()
+  out.release()
+  df.to_csv( PATH_TO_OUTPUT_LOGFILE_DIRECTORY + '/CAMERA' +
