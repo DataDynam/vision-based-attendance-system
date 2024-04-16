@@ -93,4 +93,12 @@ def video_test(video_path, svm_model):
   #update_progress(1)
   bar.finish()
   out.release()
-  df.to_csv( PATH_TO_OUTPUT_LOGFILE_DIRECTORY + '/CAMERA' +
+  df.to_csv( PATH_TO_OUTPUT_LOGFILE_DIRECTORY + '/CAMERA' +str(CAMERA_ID)+ '_logfile.csv' , index = False)
+  return
+
+
+
+
+def video():
+  '''
+  This image takes a directo
