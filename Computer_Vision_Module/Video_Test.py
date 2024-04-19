@@ -103,4 +103,6 @@ def video():
   '''
   This image takes a directory that has several videos, each video is names as: CAMERA0.mp4 / CAMERA1.mp4 and so on
   '''
-  svm_model = pickle.load(open( SVM_MODEL_
+  svm_model = pickle.load(open( SVM_MODEL_PATH +  '/svm_model.sav' , 'rb'))
+  directory = PATH_TO_VIDEO_DIRECTORY
+  for subdir in listdir(directory): # LOOP OVER SUB-F
