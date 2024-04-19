@@ -101,4 +101,6 @@ def video_test(video_path, svm_model):
 
 def video():
   '''
-  This image takes a directo
+  This image takes a directory that has several videos, each video is names as: CAMERA0.mp4 / CAMERA1.mp4 and so on
+  '''
+  svm_model = pickle.load(open( SVM_MODEL_
