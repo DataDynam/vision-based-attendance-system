@@ -105,4 +105,7 @@ def video():
   '''
   svm_model = pickle.load(open( SVM_MODEL_PATH +  '/svm_model.sav' , 'rb'))
   directory = PATH_TO_VIDEO_DIRECTORY
-  for subdir in listdir(directory): # LOOP OVER SUB-F
+  for subdir in listdir(directory): # LOOP OVER SUB-FOLDERS, on per class
+    path = directory + '/' + subdir  # PATH = SUBFOLDER
+    print("CURRENTLY PROCESSING VIDEO:", path)
+ 
