@@ -108,4 +108,9 @@ def video():
   for subdir in listdir(directory): # LOOP OVER SUB-FOLDERS, on per class
     path = directory + '/' + subdir  # PATH = SUBFOLDER
     print("CURRENTLY PROCESSING VIDEO:", path)
- 
+    video_test(path , svm_model)
+  print("FINISHED PROCESSING VIDEO FILES!")
+  return
+
+
+  
