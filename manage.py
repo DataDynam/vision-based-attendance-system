@@ -5,4 +5,6 @@ import sys
 
 
 def main():
-    os.environ.setde
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Attendance_Tracking_System_Using_Computer_Vision.settings')
+    try:
+        from dj
