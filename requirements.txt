@@ -1,0 +1,6 @@
+django
+numpy
+Pillow
+sklearn
+pandas
+progressba
