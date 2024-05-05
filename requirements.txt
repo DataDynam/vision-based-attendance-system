@@ -3,4 +3,7 @@ numpy
 Pillow
 sklearn
 pandas
-progressba
+progressbar
+mtcnn
+tensorflow
+keras
