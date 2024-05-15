@@ -6,4 +6,6 @@ An attendance system that leverages computer vision to track the presence and ac
 ## Architecture:
 The system architecture involves multiple input data sources mainly live streams (Videos) from environment cameras, processing unit, storage unit and an output- a reliable employees attendance/activity database on a web application.
 ## Modules:
-The project has four main modules, Data Acquisition, Computer Vision processing, Attendance logic and a web applicati
+The project has four main modules, Data Acquisition, Computer Vision processing, Attendance logic and a web application. Each goes through detailed steps to achieve the system's goals.
+
+For more details on each module and the system
