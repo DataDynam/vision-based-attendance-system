@@ -16,4 +16,4 @@ This project is a fork from the original repository maintained by 'MohammedSamir
 
 ## Contributions:
 
-This project invites contributor
+This project invites contributors to improve the system and add new features. Start by forking the repository, making changes and creating pull requests.
