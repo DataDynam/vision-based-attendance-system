@@ -8,4 +8,8 @@ The system architecture involves multiple input data sources mainly live streams
 ## Modules:
 The project has four main modules, Data Acquisition, Computer Vision processing, Attendance logic and a web application. Each goes through detailed steps to achieve the system's goals.
 
-For more details on each module and the system
+For more details on each module and the system architecture, check the complete README content in the repository.
+
+## New Repository Owner UserID: DataDynam
+
+This p
