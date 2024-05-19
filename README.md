@@ -12,4 +12,8 @@ For more details on each module and the system architecture, check the complete 
 
 ## New Repository Owner UserID: DataDynam
 
-This project is a fork from the original repository maintained by 'MohammedSamirMahmoud'. The new owner of th
+This project is a fork from the original repository maintained by 'MohammedSamirMahmoud'. The new owner of this repository, DataDynam, continues to maintain and improve the project.
+
+## Contributions:
+
+This project invites contributor
